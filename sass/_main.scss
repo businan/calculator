@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(to right, $linearleft , $linearRight);
+    .container {
+        background-color: white;
+        //height: 400px;
+        //width: 250px;
+        display: grid;
+        grid-template-rows: minmax(90px, auto) repeat(5, 70px);
+        grid-template-columns: repeat(4, 70px);
+        gap: 2px;
+        grid-template-areas: 
+            "AA AA AA AA"
+            "BA BA BB BC"
+            "CA CB CC CD"
+            "DA DB DC DD"
+            "EA EB EC ED"
+            "FA FB FC FC";
+            
+        #result {
+            grid-area: AA;
+        }
+        #data-reset {
+            grid-area: BA;
+        }
+        #data-del {
+            grid-area: BB;
+        }
+        #divide {
+            grid-area: BC;
+        }
+        #data-1 {
+            grid-area: CA;
+        }
+        #data-2 {
+            grid-area: CB;
+        }
+        #data-3 {
+            grid-area: CC;
+        }
+        #multiply {
+            grid-area: CD;
+        }
+        #data-4 {
+            grid-area: DA;
+        }
+        #data-5 {
+            grid-area: DB;
+        }
+        #data-6 {
+            grid-area: DC;
+        }
+        #sum {
+            grid-area: DD;
+        }
+        #data-7 {
+            grid-area: EA;
+        }
+        #data-8 {
+            grid-area: EB;
+        }
+        #data-9 {
+            grid-area: EC;
+        }
+        #subtract {
+            grid-area: ED;
+        }
+        #float {
+            grid-area: FA;
+        }
+        #data-0 {
+            grid-area: FB;
+        }
+        #data-result {
+            grid-area: FC;
+        }
+
+        .box {
+            cursor: pointer;
+            font-family: $fontMain;
+            font-weight: 500;
+            font-size: 1.2rem;
+            border: none;
+            background-color: $boxBackgroundColor;
+        }
+        .box:hover {
+            background-color: white;
+        }
+        .box:focus {
+            outline: none;
+        }
+        .result {
+            background-color: $resultBackgroundColor;
+        }
+        .result {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            word-wrap: break-word;
+            word-break: break-all;
+            padding: 10px;
+            .result-top {
+                align-self: flex-end;
+            }
+            .result-bottom {
+                align-self: flex-end;
+                //flex-wrap: wrap;
+                font-size: 1.5rem;
+            }
+            //align-items: center;
+        }
+
+    }
+}

@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "myFont";
+  src: url("../font/GothamRoundedMedium.ttf") format("truetype");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #e28bf7, #e85ba6);
+}
+body .container {
+  background-color: white;
+  display: grid;
+  grid-template-rows: minmax(90px, auto) repeat(5, 70px);
+  grid-template-columns: repeat(4, 70px);
+  gap: 2px;
+  grid-template-areas: "AA AA AA AA" "BA BA BB BC" "CA CB CC CD" "DA DB DC DD" "EA EB EC ED" "FA FB FC FC";
+}
+body .container #result {
+  grid-area: AA;
+}
+body .container #data-reset {
+  grid-area: BA;
+}
+body .container #data-del {
+  grid-area: BB;
+}
+body .container #divide {
+  grid-area: BC;
+}
+body .container #data-1 {
+  grid-area: CA;
+}
+body .container #data-2 {
+  grid-area: CB;
+}
+body .container #data-3 {
+  grid-area: CC;
+}
+body .container #multiply {
+  grid-area: CD;
+}
+body .container #data-4 {
+  grid-area: DA;
+}
+body .container #data-5 {
+  grid-area: DB;
+}
+body .container #data-6 {
+  grid-area: DC;
+}
+body .container #sum {
+  grid-area: DD;
+}
+body .container #data-7 {
+  grid-area: EA;
+}
+body .container #data-8 {
+  grid-area: EB;
+}
+body .container #data-9 {
+  grid-area: EC;
+}
+body .container #subtract {
+  grid-area: ED;
+}
+body .container #float {
+  grid-area: FA;
+}
+body .container #data-0 {
+  grid-area: FB;
+}
+body .container #data-result {
+  grid-area: FC;
+}
+body .container .box {
+  cursor: pointer;
+  font-family: "myFont", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #f8dcf2;
+}
+body .container .box:hover {
+  background-color: white;
+}
+body .container .box:focus {
+  outline: none;
+}
+body .container .result {
+  background-color: #391d35;
+}
+body .container .result {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
+}
+body .container .result .result-top {
+  align-self: flex-end;
+}
+body .container .result .result-bottom {
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
