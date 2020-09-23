@@ -13,8 +13,8 @@
             <div class="result-top" id="result-top"></div>
             <div class="result-bottom" id="result-bottom">12345</div>
         </div>
-        <button class="box" id="data-reset">AC</button>
-        <button class="box" id="data-del">DEL</button>
+        <button class="box" id="data-reset" onclick="reset();">AC</button>
+        <button class="box" id="data-del" onclick="lastCharDelete();">DEL</button>
         <button class="box" id="divide" onclick="number('÷');calculate('÷');">÷</button>
         <button class="box" id="data-1" onclick="number('1')">1</button>
         <button class="box" id="data-2" onclick="number('2')">2</button>
@@ -28,7 +28,7 @@
         <button class="box" id="data-8" onclick="number('8')">8</button>
         <button class="box" id="data-9" onclick="number('9')">9</button>
         <button class="box" id="subtract" onclick="number('-');calculate('-');">-</button>
-        <button class="box" id="float" onclick="number('.')">.</button>
+        <button class="box" id="float" onclick="dotAdd('.')">.</button>
         <button class="box" id="data-0" onclick="number('0')">0</button>
         <button class="box" id="data-result" onclick="result()">=</button>
     </div>
