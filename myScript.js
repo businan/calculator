@@ -26,6 +26,8 @@ function result() {
     let calculateNumber_1 = document.getElementById('result-bottom').innerHTML;
     let calculateNumber_2 = document.getElementById('result-top').innerHTML;
     //if (isNaN(calculateNumber_1) || isNaN(calculateNumber_2)) return
+    if (calculateNumber_1 === '') return
+    console.log("result cnumber1"+calculateNumber_1)
     switch (calculateNumber_2.slice(-1)) {
         case "+":
             final_result = parseFloat(calculateNumber_1) + parseFloat(calculateNumber_2.slice(0, -1));
