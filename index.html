@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="myScript.js"></script>
+    
     <title>Calculator</title>
 </head>
 <body>
@@ -13,24 +13,26 @@
             <div class="result-top" id="result-top"></div>
             <div class="result-bottom" id="result-bottom"></div>
         </div>
-        <button class="box" id="data-reset" onclick="reset();">AC</button>
-        <button class="box" id="data-del" onclick="lastCharDelete();">DEL</button>
-        <button class="box" id="divide" onclick="number('÷');calculate('÷');">÷</button>
-        <button class="box" id="data-1" onclick="number('1')">1</button>
-        <button class="box" id="data-2" onclick="number('2')">2</button>
-        <button class="box" id="data-3" onclick="number('3')">3</button>
-        <button class="box" id="multiply" onclick="number('*');calculate('*');">*</button>
-        <button class="box" id="data-4" onclick="number('4')">4</button>
-        <button class="box" id="data-5" onclick="number('5')">5</button>
-        <button class="box" id="data-6" onclick="number('6')">6</button>
-        <button class="box" id="sum" onclick="number('+');calculate('+');">+</button>
-        <button class="box" id="data-7" onclick="number('7')">7</button>
-        <button class="box" id="data-8" onclick="number('8')">8</button>
-        <button class="box" id="data-9" onclick="number('9')">9</button>
-        <button class="box" id="subtract" onclick="number('-');calculate('-');">-</button>
-        <button class="box" id="float" onclick="dotAdd('.')">.</button>
-        <button class="box" id="data-0" onclick="number('0')">0</button>
-        <button class="box" id="data-result" onclick="result()">=</button>
+        <button class="box reset" id="data-reset" >AC</button>
+        <button class="box lastCharDelete" id="data-del">DEL</button>
+        <button class="box calculate numberButton" id="divide" >÷</button>
+        <button class="box numberButton" id="data-1" >1</button>
+        <button class="box numberButton" id="data-2">2</button>
+        <button class="box numberButton" id="data-3">3</button>
+        <button class="box calculate numberButton" id="multiply" >*</button>
+        <button class="box numberButton" id="data-4">4</button>
+        <button class="box numberButton" id="data-5">5</button>
+        <button class="box numberButton" id="data-6">6</button>
+        <button class="box calculate numberButton" id="sum" >+</button>
+        <button class="box numberButton" id="data-7">7</button>
+        <button class="box numberButton" id="data-8">8</button>
+        <button class="box numberButton" id="data-9">9</button>
+        <button class="box calculate numberButton" id="subtract" >-</button>
+        <button class="box dotAdd" id="float" >.</button>
+        <button class="box numberButton" id="data-0">0</button>
+        <button class="box resultButton" id="data-result">=</button>
     </div>
+
+    <script src="myScript.js"></script>
 </body>
 </html>
